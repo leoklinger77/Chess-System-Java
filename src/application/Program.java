@@ -33,10 +33,12 @@ public class Program {
 
 				ChessPosition target = UI.readChessPosition(sc);
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
-				
-				if(captured != null) {
+
+				if (captured != null) {
 					captured.add(capturedPiece);
+
 				}
+
 			} catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
@@ -45,6 +47,7 @@ public class Program {
 				sc.nextLine();
 
 			}
+
 		}
 
 	}
